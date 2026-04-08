@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "228591321905",
+    "project_id": "itsmyduty-27fcb",
+    "storage_bucket": "itsmyduty-27fcb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228591321905:android:b32dcbcfa63872ec66e610",
+        "android_client_info": {
+          "package_name": "com.example.itsmyduty"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCJaoA1-pb77cpP3xT8zksl8AdDIv85OI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
