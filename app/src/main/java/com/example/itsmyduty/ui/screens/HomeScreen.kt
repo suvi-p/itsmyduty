@@ -27,7 +27,7 @@ import androidx.compose.ui.graphics.Color
 import com.example.itsmyduty.R
 import androidx.compose.ui.Alignment
 
-// 🔍 BLUE SEARCH BAR
+//  BLUE SEARCH BAR
 @Composable
 fun BlueSearchBar(
     searchQuery: String,
@@ -65,7 +65,7 @@ fun BlueSearchBar(
     )
 }
 
-// ⭐ RATING BADGE
+//  RATING BADGE
 @Composable
 fun RatingBadge(rating: Double) {
     Row(
@@ -80,7 +80,7 @@ fun RatingBadge(rating: Double) {
     }
 }
 
-// 🟢 TAG CHIP (Verified / Top Rated)
+//  TAG CHIP (Verified / Top Rated)
 @Composable
 fun TagChip(text: String, color: Color) {
     Text(
@@ -93,7 +93,7 @@ fun TagChip(text: String, color: Color) {
     )
 }
 
-// 🏠 HOME SCREEN
+//  HOME SCREEN
 @Composable
 fun HomeScreen(
     navController: NavController,
@@ -142,7 +142,7 @@ fun HomeScreen(
                     shape = RoundedCornerShape(20.dp),
                     elevation = CardDefaults.cardElevation(8.dp),
                     colors = CardDefaults.cardColors(
-                        containerColor = Color(0xFFF0F4FF) // 🔵 light blue background
+                        containerColor = Color(0xFFF0F4FF) //  light blue background
                     ),
                     modifier = Modifier
                         .padding(vertical = 10.dp)
@@ -169,7 +169,7 @@ fun HomeScreen(
 
                         Column(modifier = Modifier.padding(16.dp)) {
 
-                            // 🔥 TAGS + RATING
+                            //  TAGS + RATING
                             Row(
                                 modifier = Modifier.fillMaxWidth(),
                                 horizontalArrangement = Arrangement.SpaceBetween
@@ -201,7 +201,7 @@ fun HomeScreen(
 
                             Divider(modifier = Modifier.padding(vertical = 10.dp))
 
-                            // 💰 PRICE + DISTANCE
+                            //  PRICE + DISTANCE
                             Row(
                                 modifier = Modifier.fillMaxWidth(),
                                 horizontalArrangement = Arrangement.SpaceBetween
@@ -236,7 +236,7 @@ fun HomeScreen(
                                     .height(50.dp),
                                 shape = RoundedCornerShape(50),
                                 colors = ButtonDefaults.buttonColors(
-                                    containerColor = Color(0xFF2962FF),   // 🔵 blue
+                                    containerColor = Color(0xFF2962FF),   //  blue
                                     contentColor = Color.White           // text color
                                 )
                             ) {
