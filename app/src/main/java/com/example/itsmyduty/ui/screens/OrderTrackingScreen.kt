@@ -43,13 +43,13 @@ fun OrderTrackingScreen(
             .fillMaxSize()
             .background(
                 Brush.verticalGradient(
-                    listOf(Color(0xFFE3F2FD), Color.White) // 🔵 blue gradient
+                    listOf(Color(0xFFE3F2FD), Color.White) //  blue gradient
                 )
             )
             .padding(16.dp)
     ) {
 
-        // 🔵 HEADER WITH BLUE BACKGROUND
+        //  HEADER WITH BLUE BACKGROUND
         Box(
             modifier = Modifier
                 .fillMaxWidth()
@@ -80,7 +80,7 @@ fun OrderTrackingScreen(
 
         Spacer(modifier = Modifier.height(24.dp))
 
-        // 🔷 MAIN STATUS CARD
+        //  MAIN STATUS CARD
         Card(
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(24.dp),
@@ -132,7 +132,7 @@ fun OrderTrackingScreen(
 
         Spacer(modifier = Modifier.weight(1f))
 
-        // 🔘 CALL BUTTON
+        //  CALL BUTTON
         Button(
             onClick = {
                 val intent = Intent(Intent.ACTION_DIAL).apply {
@@ -156,7 +156,7 @@ fun OrderTrackingScreen(
 
         Spacer(modifier = Modifier.height(12.dp))
 
-        // 🔘 CANCEL BUTTON
+        // CANCEL BUTTON
         Button(
             onClick = { showCancelDialog = true },
             modifier = Modifier
@@ -175,7 +175,7 @@ fun OrderTrackingScreen(
 
         Spacer(modifier = Modifier.height(12.dp))
 
-        // 🔘 BACK BUTTON
+        //  BACK BUTTON
         Button(
             onClick = { navController.popBackStack() },
             modifier = Modifier
@@ -191,7 +191,7 @@ fun OrderTrackingScreen(
         }
     }
 
-    // 🔵 CANCEL DIALOG
+    // CANCEL DIALOG
     if (showCancelDialog) {
         AlertDialog(
             onDismissRequest = { showCancelDialog = false },
