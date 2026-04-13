@@ -40,7 +40,7 @@ fun ServiceRequestScreen(
             .padding(horizontal = 24.dp, vertical = 32.dp)
     ) {
 
-        // 🔷 SELECTED SERVICE INFO - Moved to top
+        //  SELECTED SERVICE INFO - Moved to top
         Card(
             shape = RoundedCornerShape(16.dp),
             colors = CardDefaults.cardColors(containerColor = lightBlue.copy(alpha = 0.4f)),
@@ -67,7 +67,7 @@ fun ServiceRequestScreen(
 
         Spacer(modifier = Modifier.height(40.dp))
 
-        // 🔷 HEADER - Matched font size with problem description
+        //  HEADER - Matched font size with problem description
         Text(
             text = "How can we help you today?",
             fontSize = 18.sp,
@@ -78,7 +78,7 @@ fun ServiceRequestScreen(
 
         Spacer(modifier = Modifier.height(8.dp)) // Kept near as requested previously
 
-        // 🔷 PROBLEM DESCRIPTION BOX
+        //  PROBLEM DESCRIPTION BOX
         Text(
             text = "Describe your problem",
             fontWeight = FontWeight.Bold,
@@ -107,7 +107,7 @@ fun ServiceRequestScreen(
 
         Spacer(modifier = Modifier.weight(1f))
 
-        // 🔷 ACTION BUTTONS - Unified Blue style with good font size
+        //  ACTION BUTTONS - Unified Blue style with good font size
         Button(
             onClick = {
                 if (problemText.isNotBlank()) {
