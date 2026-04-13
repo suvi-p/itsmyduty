@@ -64,7 +64,7 @@ fun LoginScreen(
 
                 Spacer(modifier = Modifier.height(20.dp))
 
-                // 📧 EMAIL FIELD
+                //  EMAIL FIELD
                 OutlinedTextField(
                     value = email,
                     onValueChange = { email = it },
@@ -75,13 +75,13 @@ fun LoginScreen(
 
                 Spacer(modifier = Modifier.height(12.dp))
 
-                // 🔐 PASSWORD FIELD (HIDDEN)
+                //  PASSWORD FIELD (HIDDEN)
                 OutlinedTextField(
                     value = password,
                     onValueChange = { password = it },
                     label = { Text("Password") },
 
-                    // 👇 Password hidden as dots
+                    //  Password hidden as dots
                     visualTransformation = PasswordVisualTransformation(),
 
                     shape = RoundedCornerShape(12.dp),
@@ -90,7 +90,7 @@ fun LoginScreen(
 
                 Spacer(modifier = Modifier.height(20.dp))
 
-                // 🔵 LOGIN BUTTON
+                // LOGIN BUTTON
                 Button(
                     onClick = {
                         viewModel.login(email, password)
@@ -108,7 +108,7 @@ fun LoginScreen(
 
                 Spacer(modifier = Modifier.height(10.dp))
 
-                // 🔗 CREATE ACCOUNT
+                //  CREATE ACCOUNT
                 TextButton(
                     onClick = {
                         navController.navigate("register")
