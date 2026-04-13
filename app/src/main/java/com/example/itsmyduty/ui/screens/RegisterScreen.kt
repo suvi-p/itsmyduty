@@ -56,7 +56,7 @@ fun RegisterScreen(
 
                 Spacer(modifier = Modifier.height(20.dp))
 
-                // 👤 NAME
+                //  NAME
                 OutlinedTextField(
                     value = name,
                     onValueChange = { name = it },
@@ -67,7 +67,7 @@ fun RegisterScreen(
 
                 Spacer(modifier = Modifier.height(12.dp))
 
-                // 📧 EMAIL
+                //  EMAIL
                 OutlinedTextField(
                     value = email,
                     onValueChange = { email = it },
@@ -78,7 +78,7 @@ fun RegisterScreen(
 
                 Spacer(modifier = Modifier.height(12.dp))
 
-                // 🔐 PASSWORD (HIDDEN)
+                //  PASSWORD (HIDDEN)
                 OutlinedTextField(
                     value = password,
                     onValueChange = { password = it },
@@ -90,7 +90,7 @@ fun RegisterScreen(
 
                 Spacer(modifier = Modifier.height(20.dp))
 
-                // 🔵 REGISTER BUTTON
+                //  REGISTER BUTTON
                 Button(
                     onClick = {
                         authViewModel.register(name, email, password)
@@ -109,7 +109,7 @@ fun RegisterScreen(
 
                 Spacer(modifier = Modifier.height(10.dp))
 
-                // 🔗 BACK TO LOGIN
+                //  BACK TO LOGIN
                 TextButton(
                     onClick = {
                         navController.navigate("login")
