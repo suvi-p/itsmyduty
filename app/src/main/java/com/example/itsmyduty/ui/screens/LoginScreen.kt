@@ -13,6 +13,7 @@ import com.example.itsmyduty.viewmodel.AuthViewModel
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.input.PasswordVisualTransformation
 
 @Composable
 fun LoginScreen(
@@ -63,7 +64,8 @@ fun LoginScreen(
 
                 Spacer(modifier = Modifier.height(20.dp))
 
-                TextField(
+                // 📧 EMAIL FIELD
+                OutlinedTextField(
                     value = email,
                     onValueChange = { email = it },
                     label = { Text("Email") },
@@ -73,16 +75,22 @@ fun LoginScreen(
 
                 Spacer(modifier = Modifier.height(12.dp))
 
-                TextField(
+                // 🔐 PASSWORD FIELD (HIDDEN)
+                OutlinedTextField(
                     value = password,
                     onValueChange = { password = it },
                     label = { Text("Password") },
+
+                    // 👇 Password hidden as dots
+                    visualTransformation = PasswordVisualTransformation(),
+
                     shape = RoundedCornerShape(12.dp),
                     modifier = Modifier.fillMaxWidth()
                 )
 
                 Spacer(modifier = Modifier.height(20.dp))
 
+                // 🔵 LOGIN BUTTON
                 Button(
                     onClick = {
                         viewModel.login(email, password)
@@ -100,6 +108,7 @@ fun LoginScreen(
 
                 Spacer(modifier = Modifier.height(10.dp))
 
+                // 🔗 CREATE ACCOUNT
                 TextButton(
                     onClick = {
                         navController.navigate("register")
